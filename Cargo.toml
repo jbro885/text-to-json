@@ -3,7 +3,7 @@ name = "text-to-json"
 version = "0.1.0"
 authors = ["Adiatma Kamarudin <adiatma.kamaarudin@ralali.com>"]
 edition = "2018"
-keywords = ["rust", "json", "text", "text to json",]
+keywords = ["rust", "json", "text"]
 description = "Convert text to json in rust"
 license = "MIT"
 
