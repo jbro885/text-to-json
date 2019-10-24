@@ -1,5 +1,5 @@
 pub mod text;
-pub mod to_array;
+pub mod to_json;
 
 pub use self::text::*;
-pub use self::to_array::*;
+pub use self::to_json::*;
