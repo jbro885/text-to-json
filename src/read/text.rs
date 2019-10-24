@@ -3,8 +3,8 @@ use std::fs::File;
 use std::path::Path;
 use std::error::Error;
 
-pub fn to_json() -> std::io::Result<String> {
-  let path = Path::new("example.txt");
+pub fn text(text: String) -> std::io::Result<String> {
+  let path = Path::new(&text);
   let display = path.display();
 
   let mut file = match File::open(&path) {
