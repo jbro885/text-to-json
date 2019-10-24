@@ -5,7 +5,7 @@ authors = ["Adiatma Kamarudin <adiatma.kamaarudin@ralali.com>"]
 edition = "2018"
 keywords = ["rust", "json", "text", "text to json",]
 description = "Convert text to json in rust"
-
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
