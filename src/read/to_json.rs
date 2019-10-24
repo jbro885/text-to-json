@@ -28,6 +28,7 @@ fn spliting_text_by_space(text: String) -> std::io::Result<Vec::<String>> {
     };
     res.push(get_char);
   }
+
   Ok(res)
 }
 
@@ -37,8 +38,10 @@ fn spliting_text_by_key(text: &str) -> std::io::Result<String> {
   for c in text.split(equal_char) {
     result.push(c);
   }
+
   let data_json = json!({
     result[0]: result[1],
   });
+
   Ok(data_json.to_string())
 }

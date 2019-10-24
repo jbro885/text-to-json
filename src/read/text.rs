@@ -14,5 +14,6 @@ pub fn text(text: String) -> std::io::Result<String> {
 
   let mut buffer = String::new();
   file.read_to_string(&mut buffer)?;
+
   Ok(buffer)
 }
