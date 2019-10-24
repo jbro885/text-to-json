@@ -1,5 +1,7 @@
 # text-to-json
 
+Convert text to json in rust.
+
 ## How to use?
 
 Please check [main.rs](./src/main.rs).
