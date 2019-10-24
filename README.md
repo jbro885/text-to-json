@@ -2,6 +2,13 @@
 
 Convert text to json in rust.
 
+## Install
+
+```
+[dependencies]
+text-to-json = "0.1.0"
+```
+
 ## How to use?
 
 Please check [main.rs](./src/main.rs).

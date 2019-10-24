@@ -1,11 +1,12 @@
 [package]
 name = "text-to-json"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Adiatma Kamarudin <adiatma.kamaarudin@ralali.com>"]
 edition = "2018"
 keywords = ["rust", "json", "text"]
 description = "Convert text to json in rust"
 license = "MIT"
+repository = "https://github.com/adiatma/text-to-json.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
