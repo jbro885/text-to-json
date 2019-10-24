@@ -20,5 +20,6 @@ fn main() {
 Please check [example.txt](./example.txt).
 ```
 // output
-["{\"title\":\"hello world\"}", "{\"description\":\"lorem ipsume sit amet dolor\"}", "{\"date\":\"1211121\"}"]
+[Object({"title": String("hello world")}), Object({"description": String("lorem ipsume sit amet dolor")}), Obje
+ct({"date": String("1211121")})]
 ```

@@ -2,9 +2,9 @@ extern crate serde_json;
 
 use crate::*;
 use read::text;
-use serde_json::json;
+use serde_json::{json, Value};
 
-pub fn to_json(file: String) -> std::io::Result<Vec::<String>> {
+pub fn to_json(file: String) -> std::io::Result<Vec::<Value>> {
   let t = match text(file) {
     Err(_) => panic!("Oops, can't read: <file>.txt"),
     Ok(t) => t,
@@ -18,7 +18,7 @@ pub fn to_json(file: String) -> std::io::Result<Vec::<String>> {
   Ok(f)
 }
 
-fn spliting_text_by_space(text: String) -> std::io::Result<Vec::<String>> {
+fn spliting_text_by_space(text: String) -> std::io::Result<Vec::<Value>> {
   let space_char: &'static str = "\n";
   let mut res = Vec::new();
   for c in text.split(space_char) {
@@ -32,7 +32,7 @@ fn spliting_text_by_space(text: String) -> std::io::Result<Vec::<String>> {
   Ok(res)
 }
 
-fn spliting_text_by_key(text: &str) -> std::io::Result<String> {
+fn spliting_text_by_key(text: &str) -> std::io::Result<Value> {
   let equal_char: &'static str = "=";
   let mut result = Vec::new();
   for c in text.split(equal_char) {
@@ -43,5 +43,5 @@ fn spliting_text_by_key(text: &str) -> std::io::Result<String> {
     result[0]: result[1],
   });
 
-  Ok(data_json.to_string())
+  Ok(data_json)
 }
