@@ -6,7 +6,7 @@ Convert text to json in rust.
 
 ```
 [dependencies]
-text-to-json = "0.1.0"
+text-to-json = "0.1.3"
 ```
 
 ## How to use?
